@@ -1,0 +1,137 @@
+header.header
+    .container
+        .ht__phone
+            img(src="./images/icon/person.svg", alt="person")
+            a(href="#").header__sing-in Вход 
+            span /
+            a(href="#").header___sing-up Регистрация
+.sing-in
+    .container
+        .sing-in__wrap
+            h3 Вход в личный кабинет
+            a(href="#")
+                img(src="./images/icon/pdf.svg", alt="pdf")
+                | «Инструкция по регистрации и использованию личного кабинета заявителя»
+            form(action="#")
+                .sing-in__radio
+                    input(type="radio", name="personal", value="fl", checked)#fl.active
+                    label(for="fl") Физическое лицо
+                    input(type="radio", name="personal", value="ip")#ip
+                    label(for="ip") Индивидуальный предприниматель
+                    input(type="radio", name="personal", value="ul")#ul
+                    label(for="ul") Юридическое лицо
+                .sing-in__form
+                    .sing-in__snils.active
+                        label СНИЛС 
+                            span *
+                        input(type="text", placeholder="Введите номер СНИЛС")
+                    .sing-in__ip
+                        label ИННИП 
+                            span *
+                        input(type="text", placeholder="Введите номер ИННИП")
+                    .sing-in__ul
+                        label ИНН 
+                            span *
+                        input(type="text", placeholder="Введите номер ИНН")
+                    label Пароль 
+                        span *
+                    input(type="text", placeholder="Введите ваш пароль")
+                .sing-in__btn
+                    input(type="submit", value="Войти")
+                    a(href="#") Забыли пароль?
+.regist
+    .container
+        .regist__wrap
+            h3 Регистрация в личном кабинете
+            a(href="#").regist__txt
+                img(src="./images/icon/pdf.svg", alt="pdf")
+                | «Инструкция по регистрации и использованию личного кабинета заявителя»
+            .regist__top
+                .regist__list
+                    span.regist__fl.active Физ. лицо
+                    span.regist__ip ИП
+                    span.regist__ul Юр. лицо
+                .regist__field
+                    span
+                        label Полное наименование заявителя 
+                            span *
+                        input(type="text", placeholder="Введите наименование заявителя").name-fl
+                    span
+                        label СНИЛС 
+                            span *
+                        input(type="text", placeholder="Введите номер СНИЛС")
+                .regist__field-ip
+                    span
+                        label Полное наименование заявителя 
+                            span *
+                        input(type="text", placeholder="Введите наименование заявителя")
+                .regist__field-up
+                    span
+                        label Полное наименование заявителя 
+                            span *
+                        input(type="text", placeholder="Введите наименование заявителя")
+            .regist__bottom
+                .regist__bottom-ip
+                    span
+                        label ОГРНИП  
+                            span *
+                        input(type="text", name="", placeholder="Введите номер ОГРНИП")
+                    span
+                        label ИННИП  
+                            span *
+                        input(type="text", name="", placeholder="Введите номер ИННИП")
+                .regist__bottom-ul
+                    span
+                        label ОГРН  
+                            span *
+                        input(type="text", name="", placeholder="Введите номер ОГРН")
+                    span
+                        label ИНН   
+                            span *
+                        input(type="text", name="", placeholder="Введите номер ИНН")
+                span
+                    label Телефон 
+                        span *
+                    input(type="tel", name="phone", placeholder="+7 (___) ___-__-__")
+                span
+                    label E-mail 
+                        span *
+                    input(type="email", name="mail", placeholder="Введите вашу почту")
+                span 
+                    label Пароль 
+                        span *
+                    input(type="text", placeholder="Создайте пароль")
+                span 
+                    label Подтверждение пароля 
+                        span *
+                    input(type="text", placeholder="Подтвердите пароль")
+                .regist__check
+                    input(type="checkbox", name="")#check
+                    label(for="check") Подтверждаю свое согласие на 
+                        a(href="#") обработку персональных данных 
+                        | в соответствии с требованиями Федерального закона «О персональных данных от 27.07.2006 №152-ФЗ» сетевой организацией
+                    .question__wrap-1
+                        a(href="#0")
+                            img(src="./images/icon/close.svg", alt="close")
+                        h4 Постановление Правительства №262 от 10.03.2020г., п.105 
+                        p «В случае отсутствия у заявителя личного кабинета потребителя сетевая организация обязана его зарегистрировать и сообщить заявителю порядок доступа к личному кабинету потребителя, включая получение первоначального доступа к личному кабинету, регистрацию и авторизацию потребителя, определяемый в соответствии с едиными стандартами качества обслуживания сетевыми организациями потребителей услуг сетевых организаций, утвержденными федеральным органом исполнительной власти, осуществляющим функции по выработке и реализации государственной политики и нормативно-правовому регулированию в сфере топливно-энергетического комплекса»
+                    a(href="#0").question-1
+                        img(src="./images/icon/question.svg", alt="question")
+                .regist__check
+                    input(type="checkbox", name="")#check1
+                    label(for="check1") Подтверждаю свое согласие на 
+                        a(href="#") обработку персональных данных 
+                        | в соответствии с требованиями Федерального закона «О персональных данных от 27.07.2006 №152-ФЗ» сетевой организацией
+                    .question__wrap-2
+                        a(href="#0")
+                            img(src="./images/icon/close.svg", alt="close")
+                        h4 Постановление Правительства №262 от 10.03.2020г., п.105 
+                        p «В случае отсутствия у заявителя личного кабинета потребителя сетевая организация обязана его зарегистрировать и сообщить заявителю порядок доступа к личному кабинету потребителя, включая получение первоначального доступа к личному кабинету, регистрацию и авторизацию потребителя, определяемый в соответствии с едиными стандартами качества обслуживания сетевыми организациями потребителей услуг сетевых организаций, утвержденными федеральным органом исполнительной власти, осуществляющим функции по выработке и реализации государственной политики и нормативно-правовому регулированию в сфере топливно-энергетического комплекса»
+                    a(href="#0").question-2
+                        img(src="./images/icon/question.svg", alt="question")
+                .regist__btn
+                    .capca
+                        p Код безопасности
+                        img(src="./images/decor/capca.jpg", alt="capca")
+                    input(type="submit", value="Запросить регистрацию")                    
+

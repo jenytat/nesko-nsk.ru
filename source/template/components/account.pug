@@ -1,0 +1,79 @@
+header.header
+    .container
+        .ht__phone
+            img(src="./images/icon/person.svg", alt="person")
+            a(href="#").header__sing-in Вход 
+            span /
+            a(href="#").header___sing-up Регистрация
+.main-content__in.container
+    .breadcrumbs
+        a(href="#") Главная
+        span /
+        a(href="#") Личный кабинет
+        span /
+        a(href="#").active Мои данные
+    .account
+        h2 Мои данные
+        .account__title
+            .account__links
+                a(href="#0") Мои данные
+                a(href="#0") Заявки
+                a(href="#0") Помощь
+            .account__btns
+                a(href="#") Удалить 
+                a(href="#") Выйти
+        .account__info
+            .account__person
+                h4 Иванов Иван Иванович
+                .account__table
+                    .account__row
+                        span E-mail
+                        span Info@nesko-nsk.ru
+                    .account__row
+                        span СНИЛС
+                        span 111-222-333 00
+                    .account__row
+                        span Телефон
+                        span 8 (383) 380-80-55
+            .account__button
+                a(href="#") Подать заявку
+                a(href="#") Список заявок
+    .info
+        form(action="#").info__wrap
+            .info__table
+                .info__row
+                    span Полное наименование заявителя
+                    span.text Иванов Иван Иванович
+                    input(type="text", value="Иванов Иван Иванович")
+                .info__row
+                    span СНИЛС
+                    span.text 111-222-333 00
+                    input(type="text", value="111-222-333 00")
+                .info__row
+                    span E-mail
+                    span.text Info@nesko-nsk.ru
+                    input(type="text", value="Info@nesko-nsk.ru")
+                .info__row
+                    span Телефон
+                    span.text 8 (383) 380-80-55
+                    input(type="text", value="8 (383) 380-80-55")
+                .info__row
+                    span Дата регистрации
+                    span 20.04.2020
+            a(href="#0").btn-change Редактировать данные
+            .info__wrap_btn
+                a(href="#0") Отменить
+                input(type="submit", value="Сохранить")
+        .info__btn
+            a(href="#0") Смена пароля
+            .info__change
+                form(action="#")
+                    label Новый пароль 
+                        span *
+                    input(type="text")
+                    label Повторите новый пароль 
+                        span *
+                    input(type="text")
+                    .info__change_btn
+                        a(href="#0") Отменить
+                        input(type="submit", value="Сохранить")
